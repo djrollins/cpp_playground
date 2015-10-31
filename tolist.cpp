@@ -41,9 +41,9 @@ int main()
     };
 
     std::map<char, std::string> m2 = {
-        {'a', "apple"},
-        {'b', "ball"},
-        {'c', "car"}
+        {'a', "Ayy Tarar"},
+        {'b', "Lmao Wilson"},
+        {'c', "CORAL!"}
     };
 
     std::map<float, std::tuple<int, int>> m3 = {
