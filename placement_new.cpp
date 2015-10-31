@@ -22,7 +22,7 @@ std::ostream& operator<<(std::ostream& os, const Gizmo<std::string>& g) {
 
 int main() {
     auto temp = malloc(sizeof(Gizmo<Gizmo<std::string> >));
-    new (temp) Gizmo<Gizmo<std::string> >(Gizmo<std::string>("Hello, World!"));
+    new (temp) Gizmo<Gizmo<std::string> >(Gizmo<std::string>("Bonjour, World!"));
     auto the_gizmo = static_cast<Gizmo<Gizmo<std::string> >*>(temp);
     the_gizmo->print();
     delete the_gizmo;
