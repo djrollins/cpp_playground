@@ -50,4 +50,5 @@ int main() {
     auto t = tuple_factory(42, 3.14, "Hello!", factorial<6>());
     std::cout << t << std::endl;
     static_assert(std::is_integral<factorial<1>::value_type>(), "factorial value type is not an integral type");
+    return 0;
 }
