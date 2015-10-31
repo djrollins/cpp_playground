@@ -15,7 +15,7 @@ auto slow_increment(int i)
 {
     using namespace std::chrono_literals;
     std::this_thread::sleep_for(1s);
-    return i++;
+    return ++i; //ayylmao
 }
 
 template<typename T>
