@@ -51,4 +51,5 @@ int main() {
     std::tuple<int, float, std::string> mytup = {2, 3.1, "Hello!"};
     std::cout << t << std::endl;
     static_assert(std::is_integral<factorial<1>::value_type>(), "factorial value type is not an integral type");
+    return 0;
 }
