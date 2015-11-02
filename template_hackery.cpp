@@ -48,6 +48,7 @@ auto& operator<<(std::ostream& os, std::tuple<T...> t)
 
 int main() {
     auto t = tuple_factory(42, 3.14, "Hello!", factorial<6>());
+    std::tuple<int, float, std::string> mytup = {2, 3.1, "Hello!"};
     std::cout << t << std::endl;
     static_assert(std::is_integral<factorial<1>::value_type>(), "factorial value type is not an integral type");
 }
